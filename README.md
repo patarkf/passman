@@ -4,6 +4,11 @@ Passman is a simple local password manager made with Node.js and the excellent [
 
 This little guy has the intent to offer a minimal and secure alternative to store passwords locally, using only a Linux bash, Node.js and some simple commands. 
 
+## Install
+
+To install Passman the user only has to runs the command ``npm install`` and it'll be ready to be used.
+
+
 ## A little explanation
 
 Passman has a simple workflow to save and fetch your accounts. To create an account, it receives the parameters, encrypts the content within the master password and generates a hash, after that, just saves that hash in a file (the only way to read this hash is by having the master password). To get an account, it just receives of the user the name and the master password that the user has created for it, then it decrypts the hash and transform the content in a string to the user can reads it.
