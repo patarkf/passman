@@ -24,13 +24,13 @@ Passman currently works with two major commands: ``create`` and ``get``. The wor
 To store a new password the user has to use the ``create`` command and set some important parameters to help the application to knows exactly what it has to save. 
 
 ```
-$ nodejs app.js create -n Facebook -u myusername@test.com -p pass123 -m mymasterpass2016
+$ node index.js create -n Facebook -u myusername@test.com -p pass123 -m mymasterpass2016
 ```
 
 To see the list of acceptable parameters that ``create`` supports and requires the user can runs: 
 
 ```
-$ nodejs app.js create --help
+$ node index.js create --help
 ```
 
 A similar list will be displayed:
@@ -48,13 +48,13 @@ A similar list will be displayed:
 To fetch a specific account the user must runs the ``get`` command and set the name of the account and his master password.
 
 ```
-$ nodejs app.js get -n Facebook -m mymasterpass2016
+$ node index.js get -n Facebook -m mymasterpass2016
 ```
 
 To see the list of acceptable parameters that ``get`` supports the user can runs: 
 
 ```
-$ nodejs app.js get --help
+$ node index.js get --help
 ```
 
 A similar list will be displayed:
